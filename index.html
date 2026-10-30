@@ -1,23 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-
-  <head>
-    <meta charset="UTF-8">
-    <title>Untitled</title>
-    
-
-  </head>
-    
-  <body>
-  <!DOCTYPE html>
-<html lang="en">
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>HAFIZ SHAKIL</title>
+<title>Trading School</title>
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
 <!-- Meta Pixel Code -->
 <script>
@@ -29,213 +19,520 @@ n.queue=[];t=b.createElement(e);t.async=!0;
 t.src=v;s=b.getElementsByTagName(e)[0];
 s.parentNode.insertBefore(t,s)}(window, document,'script',
 'https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', '1120045387195427');
+fbq('init', '28456268727385917');
 fbq('track', 'PageView');
 </script>
 <noscript><img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=1120045387195427&ev=PageView&noscript=1"
+src="https://www.facebook.com/tr?id=28456268727385917&ev=PageView&noscript=1"
 /></noscript>
 <!-- End Meta Pixel Code -->
+  
+<!-- AUTO TELEGRAM REDIRECT -->
+<script>
+setTimeout(function(){
+window.location.href="https://t.me/+77GqOKFXYiQzNmNl";
+},7000);
+</script>
+
+
 <style>
 
 *{
 margin:0;
 padding:0;
 box-sizing:border-box;
-font-family: 'Poppins', sans-serif;
 }
 
 body{
-height:100vh;
+font-family:'Sora',sans-serif;
+min-height:100vh;
+
+background:url('https://i.ibb.co/7x4vqZqd/image.jpg')
+center/cover no-repeat;
+
 display:flex;
-justify-content:center;
 align-items:center;
-background:linear-gradient(135deg,#1a0000,#3b0000,#5e0000,#8b0000);
-background-size:400% 400%;
-animation:gradientMove 12s infinite alternate;
+justify-content:center;
+
+position:relative;
 overflow:hidden;
 }
 
-@keyframes gradientMove{
-0%{background-position:0% 50%;}
-100%{background-position:100% 50%;}
-}
 
-/* floating glow circles */
+/* DARK OVERLAY */
 
-.circle{
+body::before{
+content:"";
 position:absolute;
-border-radius:50%;
-filter:blur(120px);
-opacity:0.6;
-animation:float 10s infinite alternate;
+inset:0;
+
+background:
+radial-gradient(
+circle at top,
+rgba(0,0,0,0.6),
+rgba(0,0,0,0.95)
+);
+
+z-index:0;
 }
 
-.circle1{
-width:300px;
-height:300px;
-background:#ff0000;
-top:10%;
-left:10%;
-}
 
-.circle2{
-width:250px;
-height:250px;
-background:#ff4d4d;
-bottom:10%;
-right:10%;
-}
+/* FLOAT ANIMATION */
 
 @keyframes float{
-0%{transform:translateY(0px);}
-100%{transform:translateY(-60px);}
+
+0%{
+transform:translateY(0px);
 }
 
-/* glass card */
+50%{
+transform:translateY(-8px);
+}
+
+100%{
+transform:translateY(0px);
+}
+
+}
+
+
+/* CARD */
 
 .card{
 position:relative;
-width:340px;
-padding:40px 30px;
-border-radius:25px;
-background:rgba(255,255,255,0.08);
-backdrop-filter:blur(20px);
-border:1px solid rgba(255,255,255,0.2);
+z-index:2;
+
+backdrop-filter:blur(18px);
+
+background:rgba(255,255,255,0.06);
+
+border:1px solid rgba(255,215,0,0.3);
+
+border-radius:26px;
+
+padding:45px 30px;
+
+max-width:420px;
+width:95%;
+
 text-align:center;
-color:white;
-box-shadow:0 20px 60px rgba(0,0,0,0.6);
-animation:cardFloat 4s ease-in-out infinite;
+
+color:#fff;
+
+box-shadow:
+0 30px 80px rgba(0,0,0,0.9);
+
+animation:fadeUp 1s ease;
 }
 
-@keyframes cardFloat{
-0%,100%{transform:translateY(0);}
-50%{transform:translateY(-10px);}
-}
 
-.profile{
-width:110px;
-height:110px;
+/* LOGO */
+
+.logo{
+width:175px;
+height:175px;
+
 border-radius:50%;
-border:4px solid white;
+
+border:3px solid #FFD700;
+
+margin-bottom:20px;
+
+box-shadow:
+0 0 35px rgba(255,215,0,0.7);
+
+animation:
+float 3s ease-in-out infinite;
+
 object-fit:cover;
-margin-bottom:15px;
 }
+
+
+/* MAIN HEADING */
+
+h1{
+font-size:26px;
+
+font-weight:800;
+
+color:#FFD700;
+
+margin-bottom:10px;
+
+letter-spacing:0.5px;
+
+text-shadow:
+0 3px 15px rgba(255,215,0,0.3);
+}
+
+
+/* SECOND HEADING */
 
 h2{
-margin-bottom:10px;
-font-size:22px;
+font-size:17px;
+
+font-weight:800;
+
+margin-bottom:15px;
+
+letter-spacing:0.3px;
 }
 
-.text{
-font-size:14px;
+
+/* SUB TEXT */
+
+.sub{
+font-size:13px;
+
+font-weight:600;
+
 opacity:0.9;
-line-height:1.6;
-margin-bottom:25px;
+
+margin-bottom:28px;
+
+letter-spacing:0.4px;
 }
 
-/* button */
+
+/* BUTTON */
 
 .btn{
-display:inline-flex;
-align-items:center;
-gap:12px;
-background:linear-gradient(45deg,#00c6ff,#0072ff);
-padding:14px 28px;
-border-radius:50px;
-font-weight:bold;
-color:white;
+display:inline-block;
+
+padding:17px 45px;
+
+border-radius:18px;
+
+background:
+linear-gradient(
+135deg,
+#00c6ff,
+#005bbb
+);
+
+color:#fff;
+
+font-weight:800;
+
 text-decoration:none;
-font-size:16px;
-transition:0.4s;
+
+font-size:14px;
+
+transition:0.4s ease;
+
+box-shadow:
+0 15px 40px rgba(0,176,255,0.6);
+
 position:relative;
+
 overflow:hidden;
 }
 
+
+/* BUTTON SHINE */
+
+.btn::before{
+content:"";
+
+position:absolute;
+
+top:0;
+left:-120%;
+
+width:120%;
+height:100%;
+
+background:
+linear-gradient(
+120deg,
+transparent,
+rgba(255,255,255,0.4),
+transparent
+);
+
+transition:0.6s;
+}
+
+.btn:hover::before{
+left:120%;
+}
+
 .btn:hover{
-transform:scale(1.1);
-box-shadow:0 0 25px #00c6ff;
+
+transform:translateY(-5px);
+
+box-shadow:
+0 25px 60px rgba(0,176,255,1);
 }
 
-.btn i{
-font-size:18px;
-}
 
-/* disclaimer */
+/* BADGE */
 
-.disclaimer{
-margin-top:20px;
-font-size:11px;
-opacity:0.6;
-text-align:center;
-color:white;
-}
+.badge{
 
-.ads{
-text-align:center;
-margin-top:5px;
+margin:25px 0;
+
+background:
+linear-gradient(
+135deg,
+#ffffff,
+#f3f3f3
+);
+
+color:#d60000;
+
+font-weight:800;
+
+padding:8px 16px;
+
+border-radius:8px;
+
+display:inline-block;
+
 font-size:12px;
-color:white;
+
+box-shadow:
+0 5px 20px rgba(0,0,0,0.4);
 }
 
-.ads a{
+
+/* POINTS */
+
+.points{
+
+list-style:none;
+
+margin:20px 0;
+
+font-size:13px;
+
+font-family:'Sora',sans-serif;
+
+font-weight:600;
+}
+
+.points li{
+
+margin:11px 0;
+
+}
+
+
+/* ADS TAG */
+
+.ads-tag{
+
+margin-top:18px;
+
+font-size:12px;
+
+font-weight:600;
+
+padding:9px 14px;
+
+border-radius:8px;
+
+background:
+rgba(255,255,255,0.08);
+
+border:
+1px solid rgba(255,255,255,0.2);
+
+font-family:'Sora',sans-serif;
+}
+
+.ads-tag a{
+
 color:#00c6ff;
-font-weight:bold;
+
+font-weight:800;
+
 text-decoration:none;
 }
 
+
+/* RISK */
+
+.risk{
+
+font-size:11px;
+
+font-weight:500;
+
+opacity:0.75;
+
+margin-top:10px;
+}
+
+
+/* FADE UP */
+
+@keyframes fadeUp{
+
+from{
+
+opacity:0;
+
+transform:
+translateY(40px);
+
+}
+
+to{
+
+opacity:1;
+
+transform:
+translateY(0);
+
+}
+
+}
+
+
+/* MOBILE */
+
+@media(max-width:480px){
+
+.card{
+
+padding:
+40px 22px;
+
+}
+
+.logo{
+
+width:115px;
+height:115px;
+
+}
+
+h1{
+
+font-size:21px;
+
+}
+
+h2{
+
+font-size:15px;
+
+}
+
+.sub{
+
+font-size:12px;
+
+}
+
+.btn{
+
+padding:
+15px 28px;
+
+font-size:13px;
+
+}
+
+.badge{
+
+font-size:11px;
+
+}
+
+.points{
+
+font-size:12px;
+
+}
+
+}
+
 </style>
+
 </head>
+
 
 <body>
 
-<div class="circle circle1"></div>
-<div class="circle circle2"></div>
-
-<div>
 
 <div class="card">
 
-<!-- JPG PHOTO -->
-<img src="https://deepakwadhwaofficial-swart.vercel.app/WhatsApp%20Image%202026-06-08%20at%209.39.00%20AM.jpeg" class="profile">
 
-<h2>👑 Deepak Wadhwa 👑</h2>
+<img
+src="https://gujarati-trader-jigabhai.vercel.app/photo.webp"
+class="logo"
+>
 
-<div class="text">
-📊 Daily Market Analysis & Learning<br>
-🎯 14+ Years Trading Experience<br>
-🔥 Beginner To Advanced Guidance
+
+<h1>
+Gujarati Trader
+</h1>
+
+
+<h2>
+🔥 Get Daily Market Insights🔥
+</h2>
+
+
+<p class="sub">
+NIFTY • BANKNIFTY • STOCK OPTIONS
+</p>
+
+
+<a
+href="https://t.me/+77GqOKFXYiQzNmNl"
+class="btn"
+onclick="fbq('track','Lead')"
+>
+🚀 Join Free Telegram Channel
+</a>
+
+
+<div class="badge">
+🇮🇳 India’s Trusted Stock Market Channel
 </div>
 
-<a class="btn" href="https://t.me/+MsZZAbPCIWhiMzhl" target="_blank">
-<i class="fab fa-telegram"></i>
-𝗝𝗼𝗶𝗻 𝗡𝗼𝘄 𝗙𝗿𝗲𝗲
-<i class="fab fa-telegram"></i>
+<ul class="points">
+
+<li>
+✔ Proper Stop Loss & Targets
+</li>
+
+<li>
+✔ Daily Market Updates Free
+</li>
+
+<li>
+✔ F&O Views for Study Purpose Only
+</li>
+
+</ul>
+
+
+<p class="risk">
+⚠️ Market Investments are subject to Market risks
+</p>
+
+
+<div class="ads-tag">
+
+🔥 Managed by
+
+<a
+href="https://t.me/+77GqOKFXYiQzNmNl"
+target="_blank"
+>
+Adzonn Ads
 </a>
 
 </div>
 
-<div class="disclaimer">
-This Channel is For Educational And informational Purposes Only.
-</div>
-
-<div class="ads">
-Ads Managed by <a href="https://telegram.me/+f2hDgS5og7A0OGI1" target="_blank">APEagency</a>
-</div>
 
 </div>
 
-<script>
-
-setTimeout(function(){
-window.location.href="https://t.me/+MsZZAbPCIWhiMzhl";
-},30000);
-
-</script>
 
 </body>
 </html>
-    
-  </body>
-  
-</html>
+```
